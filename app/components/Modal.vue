@@ -1,7 +1,10 @@
 <template>
     <div ref="modal" class="modal">
+        <slot name="header"></slot>
+        <br>
+        <slot ></slot>
         <button @click="()=>{close()}" class="close">X</button>
-        <slot name="special"></slot>
+        
     </div>
 </template>
 
@@ -47,6 +50,7 @@ export default {
     height: 200px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     opacity: 0;
