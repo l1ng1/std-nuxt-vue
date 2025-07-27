@@ -10,7 +10,6 @@ export default {
         }
     },
     mounted(){
-        console.log(useRoute().params.id)
     }
 }
 </script>
