@@ -15,6 +15,7 @@
 
 
 <script setup>
+const { $testPlugin } = useNuxtApp();
 import {reactive ,ref} from 'vue';
 const text = ref('');
 const list  = reactive([]);
